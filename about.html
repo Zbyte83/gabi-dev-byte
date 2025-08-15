@@ -18,16 +18,19 @@
 </head>
 
 <body>
+
+  <header>
+    <div class="header__home"> <!-- Link Inicio -->
+      <img src="./assets/img/LogoZbyte__sinFondo.png">
+      <button class="header__btn"><i class="fa-solid fa-bars fa-fw"></i></button>
+    </div>
+  </header>
+
   <aside class="nav__sidebar">
     <nav class="nav__sidebar--content"> <!-- Bloque Menu -->
       <div class="nav__sidebar--menu">
 
-        <div class="nav__sidebar--home"> <!-- Link Inicio -->
-          <img src="./assets/img/LogoZbyte__sinFondo.png">
-          <button class="sidebar__btn"><i class="fa-solid fa-bars fa-fw"></i></button>
-        </div>
-
-        <div class="nav__sidebar--main"> <!-- Bloque menu principal -->
+        <div class="nav__sidebar--main"> <!-- Bloque mensu principal -->
           <a href="index.html" class="sidebar__menu--link">Inicio</a>
 
           <div class="nav__sidebar--wrapper"> 
@@ -57,36 +60,99 @@
     <section class="section__about">
       <h1 class="section__about--title"><i class="fa-solid fa-user fa-fw about__icons"></i> Sobre Mi</h1>
       <p class="section__about--info">Hola, soy <strong>Gabriel</strong>, desarrollador web autodidacta con aproximadamente 8 meses de experiencia en <strong>HTML5</strong> y <strong>CSS3</strong>.</p>
-      <p class="section__about--info">Desde hace un mes también he comenzado a aprender <strong>JavaScript</strong> y <strong>PHP</strong> para adentrarme en el desarrollo dinámico y del lado del servidor.</p>
-      <p class="section__about--info">Todo lo que sé lo he aprendido por mi cuenta, explorando documentación, viendo cursos y practicando con proyectos personales. Me apasiona crear sitios web funcionales, visualmente agradables y adaptados a distintos dispositivos. Trabajo principalmente con <strong>VS Code</strong> y a medida que vaya creando proyectos nuevos lo compartiré en <strong>GitHub</strong>.</p>
+      <p class="section__about--info">Desde hace un mes también he empezado a aprender <strong>JavaScript</strong> y <strong>PHP</strong> para adentrarme en el desarrollo dinámico y del lado del servidor.</p>
+      <p class="section__about--info">Todo lo que sé lo he aprendido por mi cuenta, explorando documentación, viendo cursos y practicando con proyectos personales. Me apasiona crear sitios web funcionales, visualmente agradables y adaptados a distintos dispositivos. Trabajo principalmente con <strong>VS Code</strong> y <strong> XAMPP</strong>, y a medida que vaya creando proyectos nuevos lo compartiré en <strong>GitHub</strong>.</p>
     </section>
 
     <section class="section__about section__skills">
       <h2 class="section__about--title"><i class="fa-solid fa-gear fw fa about__icons"></i>Tecnologías y herramientas</h2>
       <div class="section__skills--list">
-        <div class="list__left">
-          <ul class="skills__tecnologies list__none">
-            <li class="section__list">HTML 5</li>
-            <li class="section__list">CSS 3</li>
-            <li class="section__list">Diseño Responsive (Flexbox y Grid)</li>
-            <li class="section__list">PHP <span>(En formación)</span></li>
-          </ul>
-        </div>
-
-        <div class="list__right">
-          <ul class="skills__gears list__none">
-            <li class="section__list">JavaScript <spam>(En formación)</spam></li>
-            <li class="section__list">GitHub (para subir contenido y compartir proyectos)</li>
-            <li class="section__list">VS Code</li>
-          </ul>
-        </div>        
-      </div>
-          
-               
-    
+        <ul class="skills__tecnologies">
+          <li class="section__list">HTML5 y CSS3 <span>(Medio-Abanzado)</span></li>
+          <li class="section__list">Diseño Responsive <span>(Flexbox y Grid)</span></li>
+          <li class="section__list">PHP <span>(En formación)</span></li>
+          <li class="section__list">JavaScript <span>(En formación)</span></li>
+          <li class="section__list">Creación de interfaces limpias y claras</li>
+        </ul>
+        
+        <ul class="skills__gears">
+          <li class="section__list">XAMPP <span>(Para probar archivos PHP)</span></li>
+          <li class="section__list">phpmyadmin <span>(Base de datos y validaciones formularios)</span></li>
+          <li class="section__list">GitHub <span>(Para subir contenido y compartir proyectos)</span></li>
+          <li class="section__list">VS Code</li>
+        </ul>
+      </div>   
     </section>
 
+    <section class="section__about section__professional--skills">
+      <h2 class="section__about--title"><i class="fas fa-tools fa-fw about__icons"></i>Habilidades Profesionales</h2>
+      <h4 class="title__professional--skills">Objetivo Profesional</h4>
+      <p class="section__about--info">Busco mi oportunidad como <strong>desarrollador web junior</strong> donde pueda aplicar lo que sé, seguir aprendiendo y crecer profesionalmente dentro de un equipo.</p>
+
+      <h4 class="title__professional--skills">Hablidades Profesionales</h4>
+      <div class="professional__skills">
+        <ul class="professional__skills--list">
+          <li class="section__list">Autodisciplinado y constancia</li>
+          <li class="section__list">Capacidad de aprendizaje continuo</li>
+          <li class="section__list">Resolución de pronlemas</li>
+          <li class="section__list">Buena Organización</li>
+          <li class="section__list">Atención al detalle</li>
+          <li class="section__list">Adaptabilidad</li>
+          <li class="section__list">Comunicación y trabajo en equipo</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section__about">
+      <h2 class="section__about--title"><i class="fa-solid fa-font-awesome about__icons fa-fw"></i>Mi camino hasta aquí</h2>
+      <p class="section__about--info">Llevo <strong>23 años en el mundo laboral</strong>, aunque nunca he trabajado en el sector tecnológico. 
+      Durante este tiempo he desarrollado valores como la responsabilidad, la constancia y la capacidad de adaptación.</p>
+      <p class="section__about--info">En el año <strong>2025</strong> voy a comenzar el <strong>FP Superior en Desarrollo de Aplicaciones Web (DAW)</strong> 
+      con el objetivo de formarme de manera oficial y ampliar mis conocimientos en el desarrollo web.</p>
+      <p class="section__about--info">Actualmente sigo aprendiendo de forma autodidacta y trabajando en proyectos personales para mejorar mis habilidades 
+      y prepararme para nuevos retos en este sector.</p>
+    </section>
+
+    <section class="section__accordion">
+      <div id="section__accordion--content">
+        <div class="accordion__content">
+          <a href="#section__accordion--content" class="accordion__btn">Contacto<i class="fa-solid fa-caret-down"></i></a>
+          <div class="accordion__content--info">
+            <p>Si estás interesado puedo encajar en tu equipo, no dudes en escribirme:</p>
+            <a href="mailto:zbyte83@gmail.com">zbyte83@gmail.com</a>
+            <p>Si quieres ver mis proyectos:</p>
+            <a href="https://github.com/Zbyte83">Github</a>  
+          </div>
+        </div>   
+      </div>              
+    </section>
   </main>
+
+  <footer class="footer">
+    <div class="footer__content">
+      <p><span>&copy; 2025 zbyte</span> - Desarrollador Web en formación</p>
+      <div class="footer__content--contact">
+        <a href="mailto:zbyte83@gamil.com?subject=Contacto desde mi portfolio&body=Hola Gabriel, te escribo porque..."><span>|</span><i class="fa-solid fa-envelope"></i> Email <span>|</span></a>
+        <a href="https://github.com/Zbyte83" target="_blank"><span>|</span><i class="fa-brands fa-github"></i> GitHub <span>|</span></a>
+      </div>
+    </div>   
+  </footer>
+
+  <script>
+    const accordionBtn = document.querySelectorAll(".accordion__btn");
+
+    accordionBtn.forEach(btn => {
+      btn.addEventListener("click", (e) => {
+        e.preventDefault();
+        const content = btn.nextElementSibling;
+        content.classList.toggle("active");
+      });
+    });
+  </script>
+
+
+
+  
 
   
 

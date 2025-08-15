@@ -15,12 +15,33 @@ body {
   color: #fff;
 }
 
+.header__home {
+  position: fixed;
+  width: 20%;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 3px solid var(--color-main) ;
+  background-color: var(--bg-main);
+}
+
+  .header__home img {
+    width: 100px;  
+  }
+
+  .header__btn  {
+    display: none;
+  }
+
+
 aside.nav__sidebar {
   width: 20%;
   min-height: 100vh;
-  background-color: var(--color-blue);
+  background-color: var(--color-bg-card-small);
   padding: 1rem;  
   position: fixed;
+  top: 3.5rem;
   border-right: 3px solid var(--color-main);
   box-shadow: var(--box-shadow);
   overflow: hidden;
@@ -30,26 +51,6 @@ aside.nav__sidebar {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-  }
-
-  .nav__sidebar--home {
-    width: 100%;
-    height: 3.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: var(--bg-main);
-  }
-
-  .nav__sidebar--home img {
-    width: 100px;  
-  }
-
-  .sidebar__btn  {
-    display: none;
   }
 
   .nav__sidebar--menu {
@@ -79,7 +80,7 @@ aside.nav__sidebar {
   }
 
   .sidebar__menu--link {
-    color: var(--bg-main);
+    color: var(--color-blue);
     position: relative;
   }
 
@@ -87,7 +88,7 @@ aside.nav__sidebar {
     content: "";
     width: 100%;
     height: 2px;
-    background-color: var(--color-bg-card-small);
+    background-color: var(--color-bg-card-big);
     position: absolute;
     bottom: -5px;
     left: 0;
@@ -122,15 +123,15 @@ aside.nav__sidebar {
 
   .sidebar__menu--dropdown > .sidebar__menu--link {
     font-size: 14px;
-    font-weight: 500;
     margin-top: 10px;
     margin-left: 10px;
-    color: var(--color-bg-card-small);
+    color: var(--color-icono);
   }
 
   .sidebar__menu--link i {
     margin-right: 5px;
-    color: #000;
+    font-weight: bold;
+    color: var(--color-blue);
   }
 
   .nav__sidebar--wrapper:hover .sidebar__menu--dropdown {
@@ -138,12 +139,11 @@ aside.nav__sidebar {
     opacity: 1;
   }
 
-
   .sidebar__contact {
     width: 100%;
     position: absolute;
     height: auto;
-    bottom: 0;
+    bottom: 3.5rem;
     left: 0;
     display: flex;
     align-items: flex-start;
@@ -179,21 +179,24 @@ aside.nav__sidebar {
 
 main {
   width: 80%;
-  height: 100vh;
+  min-height: 100vh;
   padding: 2rem 3rem;
   margin-left: 20%;
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
   flex-direction: column;
+  flex-wrap: wrap;  
 }
 
-  .section__about {
+  section.section__about {
     background-color: var(--color-main);
     width: 100%;
     min-height: 200px;
     border-radius: 10px;
     box-shadow: var(--box-shadow);
     padding: 2rem 2.5rem;
+    margin-bottom: 5rem;
+    position: relative;
   }
 
   .section__about--title {
@@ -217,6 +220,7 @@ main {
     transform-origin: center;
     transform: translateX(-50%) scaleX(0);
     transition: transform .5s ease;
+    will-change: transform;
   }
 
   .section__about--title:hover::after {
@@ -242,14 +246,12 @@ main {
     font-style: italic;    
   }
 
-  .section__skills {
-    margin-top: 5rem;
+  section.section__skills {
     background-color: var(--color-bg-card-small);
     color: var(--color-main);  
   }
 
   .section__skills--list {
-    background-color: aqua;
     width: 100%;
     display: flex;
     align-items: center;
@@ -257,12 +259,185 @@ main {
     padding: 2rem;
   }
 
-  
-
-  .list__none {
+  .skills__tecnologies,
+  .skills__gears {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
     list-style: none;
+    padding: 1rem; 
+    margin: 0 15px;
+    width: 50%;      
   }
 
+  .section__list {
+    margin: 10px 0;  
+    font-size: 1.1rem;
+  }
+
+  .section__list span {
+    margin-left: 5px;
+    font-weight: 500;
+    color: var(--color-icono);
+    font-style: italic;
+  }
+
+  section.section__professional--skills {
+    color: var(--color-main);
+    background-color: var(--color-bg-card-small);
+  }
+
+  .title__professional--skills {
+    margin: 2.5rem 0;
+    font-size: 1.5rem;
+    color: var(--color-icono);
+    text-decoration: underline;
+  }
+
+  .section__professional--skills > p {
+    color: var(--color-main);
+    letter-spacing: 1px;
+    text-align: justify;
+    line-height: 2rem;
+    letter-spacing: 1px;
+    font-size: 18px;  
+  }
+
+  .professional__skills {
+    padding: 0 1.2rem;
+  }
+
+  .professional__skills--list {
+    margin-left: 2.5rem;
+    list-style: square;
+  }
+
+  .professional__skills--list .section__list {
+    color: var(--color-blue);
+    display: list-item;
+  }
+
+  .professional__skills--list .section__list::marker  {
+    color: var(--color-main);
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+
+  section.section__accordion {
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+    background-color: var(--color-icono);
+    border: 3px solid var(--color-bg-card-big);
+    box-shadow: var(--box-shadow);
+    margin-bottom: 2rem;
+    border-radius: 5px;
+  } 
+  
+  .accordion__content  {
+    display: block;
+    
+  }
+
+    .accordion__content > .accordion__btn {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 1.5rem;
+      width: 100%;
+      height: 2.5rem;
+      color: var(--color-bg-card-small);      
+      padding: 0 1rem;
+      
+    }  
+
+    .accordion__content .accordion__content--info {
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: max-height .5s ease, opacity 1s ease-in-out;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /*.accordion__content:hover*/ .accordion__content--info.active {
+      max-height: 500px;
+      opacity: 1;
+      padding: 1rem 1.5rem;
+    }
+
+    .accordion__content--info p {
+      color: var(--bg-main);
+      letter-spacing: 1px;
+      margin-top: 10px;
+    }
+
+    .accordion__content--info a {
+      color: chocolate;
+      letter-spacing: 1px;
+      margin: 10px 0;
+      transition: all .5s ease;
+    }
+
+    .accordion__content--info a:hover {
+      transform: scale(1.1);
+    }
+ 
+
+
+
+
+
+
+    
+
+    
+
+
+
+
+
+    
+
+
+
+  
+  /*.section__info {
+     display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2rem;
+    padding: 2rem;
+    transition: max-height .6s ease, opacity .6s ease;
+  }
+
+  .section__info a {
+    text-decoration: none;
+    color: var(--color-blue);
+    font-weight: 500;
+    margin: 10px 0;
+  }*/
+
+  footer.footer {
+    width: 80%;
+    margin-top: 0;
+    margin-left: 20%;    
+  }
+
+  
+
+
+
+
+ 
+  
+
+    
+  
+  
 
 
 

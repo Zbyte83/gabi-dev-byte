@@ -99,7 +99,7 @@
     }
 
     .nav__menu--burger { /* Menu Burguer */
-      display: block;
+      /*display: block;*/
       margin-right: 50px;
       font-size: 1.5rem;
       display: flex;
