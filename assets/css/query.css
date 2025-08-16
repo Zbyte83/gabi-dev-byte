@@ -1,5 +1,7 @@
 @import url("style.css");
 
+/* Query de index.html */
+
 @media(max-width: 768px) {
 
   .container { /* Bloque General */
@@ -321,3 +323,6 @@ header.header::after { /* Efecto sobra interior */
 
 /* FIN HEADER */
 }
+
+
+

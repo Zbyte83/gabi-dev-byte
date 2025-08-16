@@ -12,8 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
   <link rel="stylesheet" href="./assets/css/style.css">
-  <link rel="stylesheet" href="./assets/css/query.css">
-  <link rel="stylesheet" href="./assets/css/about.css">
+  <link rel="stylesheet" href="./assets/css/about.css">    
   <title>Sobre Mi - Gabriel</title>    
 </head>
 
@@ -48,11 +47,11 @@
         </div>
       </div>
 
-      <div class="nav__sidebar--menu sidebar__contact">
-          <p class="sidebar__info">Gabriel Riera</p>
-          <a class="sidebar__contact--link" href="mailto:zbyte83@gamil.com"><i class="fa-solid fa-envelope"></i> Email</a>
-          <a class="sidebar__contact--link" href="https://github.com/Zbyte83" target="_blank"><i class="fa-brands fa-github"></i>GitHub</a>
-        </div>
+      <div class="sidebar__contact">
+        <p class="sidebar__info">Gabriel Riera</p>
+        <a class="sidebar__contact--link" href="mailto:zbyte83@gamil.com"><i class="fa-solid fa-envelope"></i> Email</a>
+        <a class="sidebar__contact--link" href="https://github.com/Zbyte83" target="_blank"><i class="fa-brands fa-github"></i>GitHub</a>
+      </div>
     </nav>
   </aside>  
 
@@ -118,7 +117,7 @@
         <div class="accordion__content">
           <a href="#section__accordion--content" class="accordion__btn">Contacto<i class="fa-solid fa-caret-down"></i></a>
           <div class="accordion__content--info">
-            <p>Si estás interesado puedo encajar en tu equipo, no dudes en escribirme:</p>
+            <p>Si estás interesado y puedo encajar en tu equipo, no dudes en escribirme:</p>
             <a href="mailto:zbyte83@gmail.com">zbyte83@gmail.com</a>
             <p>Si quieres ver mis proyectos:</p>
             <a href="https://github.com/Zbyte83">Github</a>  
@@ -139,6 +138,7 @@
   </footer>
 
   <script>
+
     const accordionBtn = document.querySelectorAll(".accordion__btn");
 
     accordionBtn.forEach(btn => {
@@ -148,6 +148,26 @@
         content.classList.toggle("active");
       });
     });
+
+    const btnBurger = document.querySelector('.header__btn');
+    const menu = document.querySelector('.nav__sidebar');
+
+    btnBurger.addEventListener('click', () => {
+      menu.classList.toggle('active');
+    });
+
+    // Menu Scroll opacidad
+    const navbar = document.getElementById("nav__bar--opacity");
+    window.addEventListener("scroll", () => {
+      if(window.scrollY > 50) {
+        navbar.classList.add("nav__transparent");
+      } else {
+        navbar.classList.remove("nav__transparent");
+      }
+    });
+
+    
+    
   </script>
 
 
