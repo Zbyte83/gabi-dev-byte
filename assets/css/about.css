@@ -298,8 +298,7 @@ main {
     letter-spacing: 1px;
     text-align: justify;
     line-height: 2rem;
-    letter-spacing: 1px;
-    font-size: 18px;  
+    font-size: 2rem;  
   }
 
   .professional__skills {
@@ -456,8 +455,9 @@ main {
 
   section.section__about {
     width: 100%;
-    padding: 1rem;
+    padding: 1.2rem;
     margin-top: 3.4rem;
+    margin-bottom: 1.5rem;
   } 
 
     .section__about--title,
@@ -470,6 +470,66 @@ main {
       line-height: 1.5rem;
       letter-spacing: 0;
     }
+
+    .section__skills--list {
+      padding: 1rem;
+    }
+
+    .skills_tecnologies,
+    .skills__gears {
+      padding: .5rem;
+      margin: 0 10px;
+    }
+
+    span {
+      font-size: .8rem;
+    }
+
+
+    .section__list {
+      font-size: .9rem;
+    }
+
+    .title__professional--skills {
+      font-size: 1.2rem;
+    }
+
+    .section__professional--skills > p {
+      font-size: 1rem;
+      line-height: 1.5rem;
+    }
+
+    .professional__skills--list {
+      margin-left: 1.5rem;
+    }
+
+    .section__accordion {
+      margin-top: 2rem;
+      padding: 1rem;
+    }
+
+    .accordion__content > .accordion__btn {
+      font-size: 1.2rem;
+      padding: 0;
+      height: .1rem;
+    } 
+
+    .accordion__content--info {
+      padding: 0;
+    }
+
+    .accordion__content--info > p {
+      margin-top: 1rem;
+      font-size: 1rem;
+    }
+
+    .accordion__content--info > a {
+      font-size: .9rem;
+    }
+
+
+
+
 
   
   /* FIN MAIN */
