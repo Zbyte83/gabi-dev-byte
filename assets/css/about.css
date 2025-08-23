@@ -178,7 +178,7 @@ aside.nav__sidebar {
 
 
 main {
-  width: 80%;
+  width: 80vw;
   min-height: 100vh;
   padding: 2rem 3rem;
   margin-left: 20%;
@@ -254,7 +254,7 @@ main {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 2rem;
   }
 
@@ -264,9 +264,8 @@ main {
     align-items: flex-start;
     flex-direction: column;
     list-style: none;
-    padding: 1rem; 
     margin: 0 15px;
-    width: 50%;      
+    width: 100%;      
   }
 
   .section__list {
@@ -298,7 +297,7 @@ main {
     letter-spacing: 1px;
     text-align: justify;
     line-height: 2rem;
-    font-size: 2rem;  
+    font-size: 1.2rem;  
   }
 
   .professional__skills {
@@ -449,7 +448,7 @@ main {
   
   main {
     padding: 2rem;
-    width: 100%;
+    width: 100vw;
     margin-left: 0;
   }
 
@@ -462,7 +461,7 @@ main {
 
     .section__about--title,
     .about__icons {
-      font-size: 1.5rem;
+      font-size: 1rem;
     }
 
     .section__about--info {
@@ -477,8 +476,8 @@ main {
 
     .skills_tecnologies,
     .skills__gears {
-      padding: .5rem;
-      margin: 0 10px;
+      justify-content: center;
+      margin: 0;
     }
 
     span {
@@ -495,8 +494,9 @@ main {
     }
 
     .section__professional--skills > p {
-      font-size: 1rem;
+      font-size: .9rem;
       line-height: 1.5rem;
+      text-align: initial;
     }
 
     .professional__skills--list {
