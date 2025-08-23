@@ -535,22 +535,58 @@ main {
       text-align: center;
     }
 
-    
-    
-
-    
-
-
-
-
-
-  
   /* FIN MAIN */
   
-
   footer.footer {
     width: 100%;
     margin: 0;
+  }
+}
+
+@media(min-width: 769px) and (max-width: 998px) {
+ .header__home {
+    min-width: 30%;
+  }
+
+  .nav__sidebar {
+    min-width: 30%;    
+  }
+
+  main {
+    margin-left: 30%;
+    max-width: 70%;    
+  } 
+
+  .section__about--title,
+  .about__icons {
+    font-size: 1.3rem;
+    
+  }
+
+  .section__about--info,
+  .section__list,
+  span  {
+    font-size: .9rem;
+    letter-spacing: 0;
+  }
+
+  .section__professional--skills {
+    text-align: center;
+  }
+
+  .section__professional--skills > p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .professional__skills--list {
+    text-align: start;
+  }
+
+  footer.footer {
+    width: 70%;
+    margin-left: 30%;
+    
   }
 }
 
